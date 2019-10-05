@@ -16,9 +16,9 @@ t = Template()
 t.add_description("Effective DevOps in AWS: HelloWorld web application")
 t.add_parameter(Parameter(
     "KeyPair",
-    Description="EffectiveDevOps",
+    Description="Name of an existing EC2 KeyPair to SSH",
     Type="AWS::EC2::KeyPair::KeyName",
-    ConstraintDescription="EffectiveDevOps",
+    ConstraintDescription="must be the name of an existing EC2 KeyPair.",
     Default="EffectiveDevOps",
 ))
 
